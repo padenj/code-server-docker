@@ -36,7 +36,7 @@ jobs:
         with:
           push: true
           # Change projectname in both places:
-          tags: ghcr.io/${{ github.actor }}/code-server-docker:latest, ghcr,.io/${{ github.actor }}/code-server-docker:${{ steps.vars.outputs.sha_short }}
+          tags: ghcr.io/${{ github.actor }}/code-server-docker:latest, ghcr.io/${{ github.actor }}/code-server-docker:${{ steps.vars.outputs.sha_short }}
           context: .
           file: ./Dockerfile
       -
